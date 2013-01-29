@@ -1,0 +1,7 @@
+DebugFont
+{
+	type		truetype
+	source		courbd.ttf
+	size		32
+	resolution	72
+}

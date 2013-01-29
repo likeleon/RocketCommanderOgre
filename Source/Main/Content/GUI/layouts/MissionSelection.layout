@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="MissionSelection/Root">
+    <Window Type="TaharezLook/StaticImage" Name="MissionSelection/Background">
+      <Property Name="Image" Value="set:MainMenu-Images image:Background" />
+      <Property Name="UnifiedSize"              Value="{{1.0,0},{0.908854167,0}}" />
+      <Property Name="FrameEnabled"             Value="False" />
+      <Property Name="BackgroundEnabled"        Value="False" />
+      <Property Name="MousePassThroughEnabled"  Value="True" />
+
+      <Window Type="TaharezLook/StaticText" Name="MissionSelection/SelectMissionText" >
+        <Property Name="Text" Value="Select Mission" />
+        <Property Name="HorzFormatting"     Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting"     Value="TopAligned" />
+        <Property Name="UnifiedMaxSize"     Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect"    Value="{{0.048828125,0},{0.22063037249,0},{1,0},{0.2750716332,0}}" />
+        <Property Name="FrameEnabled"       Value="False" />
+        <Property Name="BackgroundEnabled"  Value="False" />
+      </Window>
+
+      <Window Type="TaharezLook/StaticText" Name="MissionSelection/EasyFlightText" >
+        <Property Name="Text" Value="Easy Flight" />
+        <Property Name="HorzFormatting"     Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting"     Value="TopAligned" />
+        <Property Name="UnifiedMaxSize"     Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect"    Value="{{0.048828125,0},{0.2750716332,0},{0.256103515625,0},{0.3295128939828,0}}" />
+        <Property Name="FrameEnabled"       Value="False" />
+        <Property Name="BackgroundEnabled"  Value="False" />
+      </Window>
+
+      <Window Type="TaharezLook/ImageButton" Name="MissionSelection/EasyFlightButton0">
+        <Property Name="UnifiedPosition"  Value="{{0.048828125,0},{0.3295128939828,0}}" />
+        <Property Name="UnifiedSize"      Value="{{0.0390625,0},{0.36676217765,0}}" />
+        <Property Name="NormalImage"      Value="set:EasyFlight-Images image:Preview" />
+        <Property Name="HoverImage"       Value="set:EasyFlight-Images image:Preview" />
+        <Property Name="PushedImage"      Value="set:EasyFlight-Images image:Preview" />
+        <Property Name="DisabledImage"    Value="set:EasyFlight-Images image:Preview" />
+      </Window>
+
+      <Window Type="TaharezLook/StaticText" Name="MissionSelection/LostCivilizationText" >
+        <Property Name="Text" Value="Lost Civilization" />
+        <Property Name="HorzFormatting"     Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting"     Value="TopAligned" />
+        <Property Name="UnifiedMaxSize"     Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect"    Value="{{0.256103515625,0},{0.2750716332,0},{0.51337890625,0},{0.3295128939828,0}}" />
+        <Property Name="FrameEnabled"       Value="False" />
+        <Property Name="BackgroundEnabled"  Value="False" />
+      </Window>
+
+      <Window Type="TaharezLook/ImageButton" Name="MissionSelection/LostCivilizationButton0">
+        <Property Name="UnifiedPosition"  Value="{{0.256103515625,0},{0.3295128939828,0}}" />
+        <Property Name="UnifiedSize"      Value="{{0.0390625,0},{0.5833,0}}" />
+        <Property Name="NormalImage"      Value="set:LostCivilization-Images image:Preview" />
+        <Property Name="HoverImage"       Value="set:LostCivilization-Images image:Preview" />
+        <Property Name="PushedImage"      Value="set:LostCivilization-Images image:Preview" />
+        <Property Name="DisabledImage"    Value="set:LostCivilization-Images image:Preview" />
+      </Window>
+
+      <Window Type="TaharezLook/StaticText" Name="MissionSelection/ValleyofDeathText" >
+        <Property Name="Text" Value="Valley of Death" />
+        <Property Name="HorzFormatting"     Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting"     Value="TopAligned" />
+        <Property Name="UnifiedMaxSize"     Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect"    Value="{{0.51337890625,0},{0.2750716332,0},{0.770654296875,0},{0.3295128939828,0}}" />
+        <Property Name="FrameEnabled"       Value="False" />
+        <Property Name="BackgroundEnabled"  Value="False" />
+      </Window>
+
+      <Window Type="TaharezLook/ImageButton" Name="MissionSelection/ValleyofDeathButton0">
+        <Property Name="UnifiedPosition"  Value="{{0.58173828125,0},{0.3295128939828,0}}" />
+        <Property Name="UnifiedSize"      Value="{{0.0390625,0},{0.5633,0}}" />
+        <Property Name="NormalImage"      Value="set:ValleyofDeath-Images image:Preview0" />
+        <Property Name="HoverImage"       Value="set:ValleyofDeath-Images image:Preview0" />
+        <Property Name="PushedImage"      Value="set:ValleyofDeath-Images image:Preview0" />
+        <Property Name="DisabledImage"    Value="set:ValleyofDeath-Images image:Preview0" />
+      </Window>
+
+      <Window Type="TaharezLook/ImageButton" Name="MissionSelection/ValleyofDeathButton1">
+        <Property Name="UnifiedPosition"  Value="{{0.51337890625,0},{0.3295128939828,0}}" />
+        <Property Name="UnifiedSize"      Value="{{0.0390625,0},{0.5633,0}}" />
+        <Property Name="NormalImage"      Value="set:ValleyofDeath-Images image:Preview1" />
+        <Property Name="HoverImage"       Value="set:ValleyofDeath-Images image:Preview1" />
+        <Property Name="PushedImage"      Value="set:ValleyofDeath-Images image:Preview1" />
+        <Property Name="DisabledImage"    Value="set:ValleyofDeath-Images image:Preview1" />
+      </Window>
+
+      <Window Type="TaharezLook/StaticText" Name="MissionSelection/TheRevengeText" >
+        <Property Name="Text" Value="The Revenge" />
+        <Property Name="HorzFormatting"     Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting"     Value="TopAligned" />
+        <Property Name="UnifiedMaxSize"     Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect"    Value="{{0.770654296875,0},{0.2750716332,0},{1,0},{0.3295128939828,0}}" />
+        <Property Name="FrameEnabled"       Value="False" />
+        <Property Name="BackgroundEnabled"  Value="False" />
+      </Window>
+
+      <Window Type="TaharezLook/ImageButton" Name="MissionSelection/TheRevengeButton0">
+        <Property Name="UnifiedPosition"  Value="{{0.839013671875,0},{0.3295128939828,0}}" />
+        <Property Name="UnifiedSize"      Value="{{0.0390625,0},{0.5633,0}}" />
+        <Property Name="NormalImage"      Value="set:TheRevenge-Images image:Preview0" />
+        <Property Name="HoverImage"       Value="set:TheRevenge-Images image:Preview0" />
+        <Property Name="PushedImage"      Value="set:TheRevenge-Images image:Preview0" />
+        <Property Name="DisabledImage"    Value="set:TheRevenge-Images image:Preview0" />
+      </Window>
+
+      <Window Type="TaharezLook/ImageButton" Name="MissionSelection/TheRevengeButton1">
+        <Property Name="UnifiedPosition"  Value="{{0.770654296875,0},{0.3295128939828,0}}" />
+        <Property Name="UnifiedSize"      Value="{{0.0390625,0},{0.5633,0}}" />
+        <Property Name="NormalImage"      Value="set:TheRevenge-Images image:Preview1" />
+        <Property Name="HoverImage"       Value="set:TheRevenge-Images image:Preview1" />
+        <Property Name="PushedImage"      Value="set:TheRevenge-Images image:Preview1" />
+        <Property Name="DisabledImage"    Value="set:TheRevenge-Images image:Preview1" />
+      </Window>
+
+      <Window Type="TaharezLook/ImageButton" Name="MissionSelection/BackButton">
+        <Property Name="UnifiedPosition"  Value="{{0.775390625,0},{0.8997134670487106,0}}" />
+        <Property Name="UnifiedSize"      Value="{{0.1953125,0},{0.100260417,0}}" />
+        <Property Name="NormalImage"      Value="set:MainMenu-Images image:BackButtonNormal" />
+        <Property Name="HoverImage"       Value="set:MainMenu-Images image:BackButtonHover" />
+        <Property Name="PushedImage"      Value="set:MainMenu-Images image:BackButtonPushed" />
+        <Property Name="DisabledImage"    Value="set:MainMenu-Images image:BackButtonDisabled" />
+      </Window>
+    </Window>
+    
+    <Window Type="TaharezLook/StaticImage" Name="MissionSelection/BackgroundFoot">
+      <Property Name="Image"                    Value="set:MainMenu-Images image:BackgroundFoot" />
+      <Property Name="UnifiedAreaRect"          Value="{{0.0,0},{0.908854167,0},{1.0,0},{1.0,0}}" />
+      <Property Name="FrameEnabled"             Value="False" />
+      <Property Name="BackgroundEnabled"        Value="False" />
+      <Property Name="MousePassThroughEnabled"  Value="True" />
+    </Window>
+  </Window>
+</GUILayout>

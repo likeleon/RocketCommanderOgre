@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<Imageset Name="TheRevenge-Images" Imagefile="../../Levels/The Revenge.png">
+  <Image Name="Preview0"  XPos="0"  YPos="0"  Width="40" Height="512" />
+  <Image Name="Preview1"  XPos="0"  YPos="512"  Width="40" Height="512" />
+</Imageset>

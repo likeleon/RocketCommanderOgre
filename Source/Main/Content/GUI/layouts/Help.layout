@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="Help/Root">
+    <Window Type="TaharezLook/StaticImage" Name="Help/Background">
+      <Property Name="Image" Value="set:MainMenu-Images image:Background" />
+      <Property Name="UnifiedSize"              Value="{{1.0,0},{0.908854167,0}}" />
+      <Property Name="FrameEnabled"             Value="False" />
+      <Property Name="BackgroundEnabled"        Value="False" />
+      <Property Name="MousePassThroughEnabled"  Value="True" />
+
+      <Window Type="TaharezLook/StaticImage" Name="Help/Help">
+        <Property Name="Image"              Value="set:HelpScreen-Images image:Help" />
+        <Property Name="UnifiedPosition"    Value="{{0,0},  {0.2492836676217765,0}}" />
+        <Property Name="UnifiedSize"        Value="{{1.0,0},{0.7306590257879656,0}}" />
+        <Property Name="FrameEnabled"       Value="False" />
+        <Property Name="BackgroundEnabled"  Value="False" />
+        <Property Name="MousePassThroughEnabled"  Value="True" />
+      </Window>
+
+      <Window Type="TaharezLook/ImageButton" Name="Help/BackButton">
+        <Property Name="UnifiedPosition"  Value="{{0.775390625,0},{0.8997134670487106,0}}" />
+        <Property Name="UnifiedSize"      Value="{{0.1953125,0},{0.100260417,0}}" />
+        <Property Name="NormalImage"      Value="set:MainMenu-Images image:BackButtonNormal" />
+        <Property Name="HoverImage"       Value="set:MainMenu-Images image:BackButtonHover" />
+        <Property Name="PushedImage"      Value="set:MainMenu-Images image:BackButtonPushed" />
+        <Property Name="DisabledImage"    Value="set:MainMenu-Images image:BackButtonDisabled" />
+      </Window>
+    </Window>
+
+    <Window Type="TaharezLook/StaticImage" Name="Help/BackgroundFoot">
+      <Property Name="Image"                    Value="set:MainMenu-Images image:BackgroundFoot" />
+      <Property Name="UnifiedAreaRect"          Value="{{0.0,0},{0.908854167,0},{1.0,0},{1.0,0}}" />
+      <Property Name="FrameEnabled"             Value="False" />
+      <Property Name="BackgroundEnabled"        Value="False" />
+      <Property Name="MousePassThroughEnabled"  Value="True" />
+    </Window>
+  </Window>
+</GUILayout>

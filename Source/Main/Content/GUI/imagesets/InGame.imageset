@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<Imageset Name="InGame-Images" Imagefile="InGame.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="true">
+  <Image Name="FuelBar"           XPos="0"    YPos="115"    Width="208"  Height="81" />
+  <Image Name="FuelIcon"          XPos="208"  YPos="115"    Width="48"   Height="81" />
+  <Image Name="HealthBar"         XPos="0"    YPos="196"    Width="208"  Height="29" />
+  <Image Name="HealthIcon"        XPos="208"  YPos="196"    Width="48"   Height="29" />
+  <Image Name="SpeedBar"          XPos="0"    YPos="225"    Width="208"  Height="31" />
+  <Image Name="SpeedIcon"         XPos="208"  YPos="225"    Width="48"   Height="31" />
+  <Image Name="MiniMapBackground" XPos="168"  YPos="0"      Width="88"   Height="115" />
+  <Image Name="RocketLife"        XPos="106"  YPos="0"      Width="37"   Height="49" />
+  <Image Name="TargetIcon"        XPos="106"  YPos="49"     Width="61"   Height="61" />
+  <Image Name="ArrowRight"        XPos="0"    YPos="0"      Width="53"   Height="57" />
+  <Image Name="ArrowLeft"         XPos="53"   YPos="0"      Width="53"   Height="57" />
+  <Image Name="ArrowUp"           XPos="0"    YPos="57"     Width="53"   Height="57" />
+  <Image Name="ArrowDown"         XPos="53"   YPos="57"     Width="53"   Height="57" />
+</Imageset>

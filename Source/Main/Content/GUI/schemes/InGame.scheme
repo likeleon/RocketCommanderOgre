@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<GUIScheme Name="ProgressBarSkin">
+  <Imageset Filename="InGame.imageset" />
+  <LookNFeel Filename="InGame.looknfeel" />
+  <WindowRendererSet Filename="CEGUIFalagardWRBase" />
+  <FalagardMapping WindowType="InGame/ProgressBar" TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="InGameLook/ProgressBar" />
+</GUIScheme>

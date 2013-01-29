@@ -1,0 +1,33 @@
+// Pre-screen sky cube mapping
+
+float4x4 viewInverse;
+float scale;
+float4 ambientColor;
+uniform sampler2D RT : TEXUNIT0;
+uniform samplerCUBE diffuseTextureSampler : TEXUNIT1;
+
+struct VertexInput
+{
+	float2 pos	: POSITION;
+};
+
+struct VertexOutput
+{
+	float4 pos		: POSITION;
+	float3 texCoord	: TEXCOORD0;
+};
+
+VertexOutput main_vp(VertexInput In)
+{
+	VertexOutput Out;
+	Out.pos = float4(In.pos.xy, 0, 1);
+	Out.texCoord = mul(float4(-In.pos, scale, 0), viewInverse).xyz;
+	Out.texCoord.y *= 0.8f;
+	return Out;
+}
+
+float4 main_fp(VertexOutput In) : COLOR
+{
+	float4 texCol = ambientColor * texCUBE(diffuseTextureSampler, In.texCoord);
+	return texCol;
+}

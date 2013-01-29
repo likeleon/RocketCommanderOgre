@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<Imageset Name="Hud-Images" Imagefile="Hud.png">
+  <!-- Hud -->
+  <Image Name="Hud"                XPos="0"    YPos="0"    Width="256"  Height="157" />  
+</Imageset>

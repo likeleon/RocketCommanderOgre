@@ -1,0 +1,36 @@
+material RocketCommander/Compositor/PreScreenSkyCubeMapping
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_check off
+			
+			vertex_program_ref RocketCommander/Compositor/SkyCubeMapVP
+			{
+				param_named_auto viewInverse inverse_view_matrix
+				param_named scale float 0.75
+			}
+			
+			fragment_program_ref RocketCommander/Compositor/SkyCubeMapFP
+			{
+				param_named ambientColor float4 1.0 1.0 1.0 1.0
+			}
+			
+			texture_unit 0
+			{
+                //tex_coord_set 0
+				tex_address_mode clamp
+				filtering linear linear linear
+			}
+			
+			texture_unit 1
+			{
+				//texture SpaceSkyCubeMap.dds cubic
+				cubic_texture SpaceSkyCubeMap.dds combinedUVW
+				//tex_coord_set 1
+			}
+		}
+	}
+}

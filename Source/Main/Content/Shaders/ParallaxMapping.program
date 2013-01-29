@@ -1,0 +1,15 @@
+// Parallax mapping vertex program
+vertex_program RocketCommander/ParallaxMappingVP cg
+{
+	source ParallaxMapping.cg
+	entry_point main_vp
+	profiles vs_1_1 arbvp1
+}
+
+// Parallax mapping fragment program
+fragment_program RocketCommander/ParallaxMappingFP cg
+{
+	source ParallaxMapping.cg
+	entry_point main_fp
+	profiles ps_2_0 arbfp1
+}

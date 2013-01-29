@@ -1,0 +1,13 @@
+vertex_program RocketCommander/Compositor/SkyCubeMapVP cg
+{
+	source PreScreenSkyCubeMapping.cg
+	entry_point main_vp
+	profiles vs_1_1 arbvp1
+}
+
+fragment_program RocketCommander/Compositor/SkyCubeMapFP cg
+{
+	source PreScreenSkyCubeMapping.cg
+	entry_point main_fp
+	profiles ps_2_0 arbfp1
+}

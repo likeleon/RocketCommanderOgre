@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<Imageset Name="GameFont-Images" Imagefile="GameFont.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="false">
+  <Image Name=" "     XPos="0"    YPos="0"  Width="1"   Height="36" />
+  <Image Name="!"     XPos="1"    YPos="0"  Width="11"  Height="36" />
+  <Image Name="quot"  XPos="12"   YPos="0"  Width="14"  Height="36" />
+  <Image Name="#"     XPos="26"   YPos="0"  Width="20"  Height="36" />
+  <Image Name="$"     XPos="46"   YPos="0"  Width="20"  Height="36" />
+  <Image Name="%"     XPos="66"   YPos="0"  Width="24"  Height="36" />
+  <Image Name="amper" XPos="90"   YPos="0"  Width="25"  Height="36" />
+  <Image Name="'"     XPos="115"  YPos="0"  Width="8"   Height="36" />
+  <Image Name="("     XPos="124"  YPos="0"  Width="10"  Height="36" />
+  <Image Name=")"     XPos="136"  YPos="0"  Width="10"  Height="36" />
+  <Image Name="*"     XPos="146"  YPos="0"  Width="20"  Height="36" />
+  <Image Name="+"     XPos="166"  YPos="0"  Width="20"  Height="36" />
+  <Image Name=","     XPos="186"  YPos="0"  Width="10"  Height="36" />
+  <Image Name="-"     XPos="196"  YPos="0"  Width="10"  Height="36" />
+  <Image Name="."     XPos="207"  YPos="0"  Width="10"  Height="36" />
+  <Image Name="/"     XPos="217"  YPos="0"  Width="18"  Height="36" />
+  <Image Name="0"     XPos="235"  YPos="0"  Width="20"  Height="36" />
+
+  <Image Name="1"     XPos="0"    YPos="36" Width="20"  Height="36" />
+  <Image Name="2"     XPos="20"   YPos="36" Width="20"  Height="36" />
+  <Image Name="3"     XPos="40"   YPos="36" Width="20"  Height="36" />
+  <Image Name="4"     XPos="60"   YPos="36" Width="21"  Height="36" />
+  <Image Name="5"     XPos="81"   YPos="36" Width="20"  Height="36" />
+  <Image Name="6"     XPos="101"  YPos="36" Width="20"  Height="36" />
+  <Image Name="7"     XPos="121"  YPos="36" Width="20"  Height="36" />
+  <Image Name="8"     XPos="141"  YPos="36" Width="20"  Height="36" />
+  <Image Name="9"     XPos="161"  YPos="36" Width="20"  Height="36" />
+  <Image Name=":"     XPos="181"  YPos="36" Width="10"  Height="36" />
+  <Image Name=";"     XPos="191"  YPos="36" Width="10"  Height="36" />
+  <Image Name="less"  XPos="201"  YPos="36" Width="20"  Height="36" />
+  <Image Name="="     XPos="221"  YPos="36" Width="20"  Height="36" />
+
+  <Image Name=">"     XPos="0"    YPos="72" Width="20"  Height="36" />
+  <Image Name="?"     XPos="20"   YPos="72" Width="19"  Height="36" />
+  <Image Name="@"     XPos="39"   YPos="72" Width="26"  Height="36" />
+  <Image Name="A"     XPos="65"   YPos="72" Width="22"  Height="36" />
+  <Image Name="B"     XPos="87"   YPos="72" Width="22"  Height="36" />
+  <Image Name="C"     XPos="109"  YPos="72" Width="22"  Height="36" />
+  <Image Name="D"     XPos="131"  YPos="72" Width="23"  Height="36" />
+  <Image Name="E"     XPos="154"  YPos="72" Width="20"  Height="36" />
+  <Image Name="F"     XPos="174"  YPos="72" Width="19"  Height="36" />
+  <Image Name="G"     XPos="193"  YPos="72" Width="23"  Height="36" />
+  <Image Name="H"     XPos="216"  YPos="72" Width="23"  Height="36" />
+  <Image Name="I"     XPos="239"  YPos="72" Width="11"  Height="36" />
+  
+  <Image Name="J"     XPos="0"    YPos="108" Width="15"  Height="36" />
+  <Image Name="K"     XPos="15"   YPos="108" Width="22"  Height="36" />
+  <Image Name="L"     XPos="37"   YPos="108" Width="19"  Height="36" />
+  <Image Name="M"     XPos="56"   YPos="108" Width="29"  Height="36" />
+  <Image Name="N"     XPos="85"   YPos="108" Width="23"  Height="36" />
+  <Image Name="O"     XPos="108"  YPos="108" Width="24"  Height="36" />
+  <Image Name="P"     XPos="132"  YPos="108" Width="22"  Height="36" />
+  <Image Name="Q"     XPos="154"  YPos="108" Width="24"  Height="36" />
+  <Image Name="R"     XPos="178"  YPos="108" Width="24"  Height="36" />
+  <Image Name="S"     XPos="202"  YPos="108" Width="21"  Height="36" />
+  <Image Name="T"     XPos="223"  YPos="108" Width="16"  Height="36" />
+
+  <Image Name="U"     XPos="0"    YPos="144" Width="22"  Height="36" />
+  <Image Name="V"     XPos="22"   YPos="144" Width="22"  Height="36" />
+  <Image Name="W"     XPos="44"   YPos="144" Width="30"  Height="36" />
+  <Image Name="X"     XPos="74"   YPos="144" Width="22"  Height="36" />
+  <Image Name="Y"     XPos="96"   YPos="144" Width="20"  Height="36" />
+  <Image Name="Z"     XPos="116"  YPos="144" Width="20"  Height="36" />
+  <Image Name="["     XPos="136"  YPos="144" Width="10"  Height="36" />
+  <Image Name="\"     XPos="146"  YPos="144" Width="18"  Height="36" />
+  <Image Name="]"     XPos="167"  YPos="144" Width="10"  Height="36" />
+  <Image Name="^"     XPos="177"  YPos="144" Width="17"  Height="36" />
+  <Image Name="_"     XPos="194"  YPos="144" Width="17"  Height="36" />
+  <Image Name="`"     XPos="211"  YPos="144" Width="17"  Height="36" />
+  <Image Name="a"     XPos="228"  YPos="144" Width="20"  Height="36" />
+
+  <Image Name="b"     XPos="0"    YPos="180" Width="20"  Height="36" />
+  <Image Name="c"     XPos="20"   YPos="180" Width="18"  Height="36" />
+  <Image Name="d"     XPos="38"   YPos="180" Width="20"  Height="36" />
+  <Image Name="e"     XPos="58"   YPos="180" Width="20"  Height="36" />
+  <Image Name="f"     XPos="79"   YPos="180" Width="14"  Height="36" />
+  <Image Name="g"     XPos="94"   YPos="180" Width="19"  Height="36" />
+  <Image Name="h"     XPos="114"  YPos="180" Width="19"  Height="36" />
+  <Image Name="i"     XPos="133"  YPos="180" Width="11"  Height="36" />
+  <Image Name="j"     XPos="145"  YPos="180" Width="11"  Height="36" />
+  <Image Name="k"     XPos="156"  YPos="180" Width="20"  Height="36" />
+  <Image Name="l"     XPos="176"  YPos="180" Width="11"  Height="36" />
+  <Image Name="m"     XPos="187"  YPos="180" Width="29"  Height="36" />
+  <Image Name="n"     XPos="216"  YPos="180" Width="20"  Height="36" />
+  <Image Name="o"     XPos="236"  YPos="180" Width="20"  Height="36" />
+
+  <Image Name="p"     XPos="0"    YPos="216" Width="20"  Height="36" />
+  <Image Name="q"     XPos="20"   YPos="216" Width="20"  Height="36" />
+  <Image Name="r"     XPos="40"   YPos="216" Width="13"  Height="36" />
+  <Image Name="s"     XPos="53"   YPos="216" Width="18"  Height="36" />
+  <Image Name="t"     XPos="71"   YPos="216" Width="13"  Height="36" />
+  <Image Name="u"     XPos="84"   YPos="216" Width="19"  Height="36" />
+  <Image Name="v"     XPos="104"  YPos="216" Width="17"  Height="36" />
+  <Image Name="w"     XPos="122"  YPos="216" Width="25"  Height="36" />
+  <Image Name="x"     XPos="148"  YPos="216" Width="19"  Height="36" />
+  <Image Name="y"     XPos="168"  YPos="216" Width="18"  Height="36" />
+  <Image Name="z"     XPos="186"  YPos="216" Width="16"  Height="36" />
+  <Image Name="{"     XPos="203"  YPos="216" Width="10"  Height="36" />
+  <Image Name="|"     XPos="214"  YPos="216" Width="12"  Height="36" />
+  <Image Name="}"     XPos="227"  YPos="216" Width="10"  Height="36" />
+  <Image Name="~"     XPos="237"  YPos="216" Width="18"  Height="36" />
+
+
+
+</Imageset>

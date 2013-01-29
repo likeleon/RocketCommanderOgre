@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<Imageset Name="MainMenu-Images" Imagefile="MainMenu.png">
+  <!-- Background -->
+  <Image Name="Background"                XPos="0"    YPos="0"    Width="1024"  Height="698" />
+  <Image Name="BackgroundFoot"            XPos="0"    YPos="698"  Width="1024"  Height="70" />
+  
+  <!-- Menu Buttons -->
+  <Image Name="MissionsButtonNormal"		  XPos="3"    YPos="840"  Width="200"   Height="77" />
+  <Image Name="MissionsButtonHover"		    XPos="3"    YPos="920"  Width="200"   Height="77" />
+	<Image Name="MissionsButtonPushed"		  XPos="3"    YPos="920"  Width="200"   Height="77" />
+	<Image Name="MissionsButtonDisabled"	  XPos="3"    YPos="840"  Width="200"   Height="77" />
+
+  <Image Name="HighscoresButtonNormal"	  XPos="207"  YPos="840"  Width="200"   Height="77" />
+	<Image Name="HighscoresButtonHover"		  XPos="207"  YPos="920"  Width="200"   Height="77" />
+	<Image Name="HighscoresButtonPushed"	  XPos="207"  YPos="920"  Width="200"   Height="77" />
+	<Image Name="HighscoresButtonDisabled"	XPos="207"  YPos="840"  Width="200"   Height="77" />
+
+  <Image Name="CreditsButtonNormal"	      XPos="411"  YPos="840"  Width="200"   Height="77" />
+  <Image Name="CreditsButtonHover"		    XPos="411"  YPos="920"  Width="200"   Height="77" />
+  <Image Name="CreditsButtonPushed"	      XPos="411"  YPos="920"  Width="200"   Height="77" />
+  <Image Name="CreditsButtonDisabled"	    XPos="411"  YPos="840"  Width="200"   Height="77" />
+
+  <Image Name="ExitButtonNormal"	        XPos="615"  YPos="840"  Width="200"   Height="77" />
+  <Image Name="ExitButtonHover"	    	    XPos="615"  YPos="920"  Width="200"   Height="77" />
+  <Image Name="ExitButtonPushed"	        XPos="615"  YPos="920"  Width="200"   Height="77" />
+  <Image Name="ExitButtonDisabled"	      XPos="615"  YPos="840"  Width="200"   Height="77" />
+
+  <Image Name="BackButtonNormal"	        XPos="819"  YPos="840"  Width="200"   Height="77" />
+  <Image Name="BackButtonHover"	    	    XPos="819"  YPos="920"  Width="200"   Height="77" />
+  <Image Name="BackButtonPushed"	        XPos="819"  YPos="920"  Width="200"   Height="77" />
+  <Image Name="BackButtonDisabled"	      XPos="819"  YPos="840"  Width="200"   Height="77" />
+</Imageset>

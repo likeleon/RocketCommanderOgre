@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<Imageset Name="ExtraButtons-Images" Imagefile="ExtraButtons.png">
+  <Image Name="HelpButtonNormal"		  XPos="0"    YPos="0"    Width="200"   Height="77" />
+  <Image Name="HelpButtonHover"		    XPos="0"    YPos="80"   Width="200"   Height="77" />
+	<Image Name="HelpButtonPushed"		  XPos="0"    YPos="80"   Width="200"   Height="77" />
+	<Image Name="HelpButtonDisabled"	  XPos="0"    YPos="0"    Width="200"   Height="77" />
+
+  <Image Name="OptionsButtonNormal"	  XPos="204"  YPos="0"    Width="200"   Height="77" />
+	<Image Name="OptionsButtonHover"		XPos="204"  YPos="80"   Width="200"   Height="77" />
+	<Image Name="OptionsButtonPushed"	  XPos="204"  YPos="80"   Width="200"   Height="77" />
+	<Image Name="OptionsButtonDisabled"	XPos="204"  YPos="0"    Width="200"   Height="77" />
+</Imageset>

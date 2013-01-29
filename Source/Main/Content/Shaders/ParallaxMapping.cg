@@ -1,0 +1,120 @@
+// Parallax mapping
+
+float4 lightPosition;
+float3 eyePosition;
+float4x4 worldViewProj;
+
+uniform sampler2D diffuseTextureSampler : TEXUNIT0;
+uniform sampler2D heightTextureSampler : TEXUNIT1;
+uniform sampler2D normalTextureSampler : TEXUNIT2;
+float parallaxAmount;
+float4 lightAmbient;
+float4 lightDiffuse;
+float4 lightSpecular;
+
+float shininess;
+
+// Vertex input structure
+struct VertexInput
+{
+	float4 pos		: POSITION;
+	float2 texCoord	: TEXCOORD0;
+	float3 normal   : NORMAL;
+	float3 tangent	: TANGENT0;
+};
+
+// Vertex program output structure
+struct VertexOutput
+{
+	float4 pos		: POSITION;
+	float2 texCoord	: TEXCOORD0;
+	float3 lightDir	: TEXCOORD1;
+	float3 eyeDir	: TEXCOORD2;
+	float  backFaceFactor : TEXCOORD3;
+};
+
+// Compute the 3x3 transform from tangent space to object space
+half3x3 ComputeTangentMatrix(float3 tangent, float3 normal)
+{
+	return half3x3(tangent, cross(tangent, normal), normal);
+}
+
+float3 CalcNormalVector(float3 nor)
+{
+	return normalize(nor);
+}
+
+// Returns light direction from light position and vertex position
+half3 GetLightDirection(float4 lightPosition, float4 position)
+{
+    // calculate tangent space light vector
+    // Get object space light direction
+    // Non-normalised since we'll do that in the fragment program anyway
+    return lightPosition.xyz -  (position.xyz * lightPosition.w);
+}
+
+// Returns eye direction from eye position and vertex position
+half3 GetEyeDirection(float3 eyePosition, float4 position)
+{
+	return eyePosition - position.xyz;
+}
+
+// Vertex program that moves light and eye vectors into texture tangent space at vertex
+VertexOutput main_vp(VertexInput In)
+{
+	VertexOutput Out;
+	
+	Out.pos = mul(worldViewProj, In.pos);
+	
+	// Copy texture coordinates for diffuse and normal maps
+	Out.texCoord = In.texCoord;
+	
+	// Compute the 3x3 transform from tangent space to object space
+	half3x3 worldToTangentSpace = ComputeTangentMatrix(In.tangent, In.normal);
+	
+	// Transform light vector and pass it as a color (clamped from 0 to 1)
+	// For ps_2_0 we don't need to clamp from 0 to 1
+	half3 lightDir = GetLightDirection(lightPosition, In.pos);
+	half3 eyeDir = GetEyeDirection(eyePosition, In.pos);
+	
+	Out.lightDir = normalize(mul(worldToTangentSpace, lightDir));
+	Out.eyeDir = normalize(mul(worldToTangentSpace, eyeDir));
+	
+	// Little helper to darken back face areas, looks more realistic on asteroids
+	Out.backFaceFactor = 0.25f + 0.75f * saturate(dot(CalcNormalVector(In.normal), lightDir) + 0.5f);
+	
+	return Out;
+}
+
+float4 main_fp(VertexOutput In) : COLOR
+{
+	// Get height from normal map alpha channel
+	float2 height = tex2D(heightTextureSampler, In.texCoord);
+	
+	// Calculate parallax offset
+	float3 eyeDir = normalize(In.eyeDir);
+	float2 offsetTexCoord = In.texCoord + (height * parallaxAmount - parallaxAmount * 0.5f) * eyeDir;
+	
+	// Grab texture data
+	float4 diffuseTexture = tex2D(diffuseTextureSampler, offsetTexCoord);
+	float3 normalVector = (2.0 * tex2D(normalTextureSampler, offsetTexCoord).agb) - 1.0;
+	// Normalize normal to fix blocky errors
+	normalVector = normalize(normalVector);
+	
+	// Additionally normalize the vectors
+	float3 lightVector = normalize(In.lightDir);
+	// Compute the angle to the light
+	float bump = dot(normalVector, lightVector);
+	// Specular factor
+	float3 reflect = normalize(2 * bump * normalVector - lightVector);
+	float spec = pow(saturate(dot(reflect, eyeDir)), shininess);
+	
+	// Darken down bump factor on back faces
+	bump = bump * In.backFaceFactor;
+	
+	float3 ambDiffColor = lightAmbient + bump * lightDiffuse;
+	float4 ret;
+	ret.rgb = diffuseTexture * ambDiffColor + (height.x * 0.5f) * bump * spec * lightSpecular * diffuseTexture.a;
+	ret.a = diffuseTexture.a * lightDiffuse.a;
+	return ret;
+}
